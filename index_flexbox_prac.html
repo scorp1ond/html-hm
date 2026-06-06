@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e5e5e5;
+        }
+
+        .container {
+            max-width: 1000px;
+            display: flex;
+        }
+
+        .tabs {
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        .tab {
+            display: block;
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            background: #777;
+            border-bottom: 1px solid #666;
+        }
+
+        .tab:hover {
+            background: #666;
+        }
+
+        .active {
+            background: #555;
+        }
+
+        .content {
+            flex-grow: 1;
+            background: #555;
+            padding: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+        }
+
+        .card,
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .card,
+        h3 {
+            color: white;
+            margin: 15px 0 10px;
+        }
+
+        .card,
+        p {
+            color: white;
+            line-height: 1.5;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="tabs">
+            <a href="#" class="tab active">Tab 1</a>
+            <a href="#" class="tab">Tab 2</a>
+            <a href="#" class="tab">Tab 3</a>
+        </div>
+
+        <div class="content">
+
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="https://cslabez.com/wp-content/uploads/2023/10/CS2-System-requirements-minumum-and-recommended-specs.jpg"
+                        alt="">
+                    <h3>Header 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In ultrices lorem id consectetur tempus.
+                        Mauris tristique enim in hendrerit dapibus.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="https://cslabez.com/wp-content/uploads/2023/10/CS2-System-requirements-minumum-and-recommended-specs.jpg"
+                        alt="">
+                    <h3>Header 2</h3>
+                    <p>
+                        Quisque id lectus et ipsum bibendum mattis vitae sagittis magna.
+                        Aenean accumsan turpis gravida feugiat molestie.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="https://cslabez.com/wp-content/uploads/2023/10/CS2-System-requirements-minumum-and-recommended-specs.jpg"
+                        alt="">
+                    <h3>Header 3</h3>
+                    <p>
+                        Mauris nec purus nec ligula euismod convallis.
+                        Vivamus ac tortor vel quam viverra tristique.
+                        Curabitur suscipit est non mattis volutpat.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
